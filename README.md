@@ -1,5 +1,4 @@
 # pong
-
 import pygame
 import time
 import sys
@@ -122,7 +121,7 @@ while True:
     screen.blit(best_score_text, (WIDTH - best_score_text.get_width() - 10, 10))
 
     if pause:
-        end_text = font.render("Appuyez sur entréé", True, GREEN)
+        end_text = font.render("Appuyez sur entré", True, GREEN)
         end_rect = end_text.get_rect(center=(WIDTH // 2, HEIGHT // 2))
         screen.blit(end_text, end_rect)
         your_score_text = font.render("Your score: {}".format(score), True, WHITE)
